@@ -1,40 +1,106 @@
-# If you want to move down the line, please use \n. e.g: Priyanshu\nPriyansh.
-# After changed, you have to restart the bot to use.
-# Put the # character at the beginning of each sentence if you don't want the code to run those lines. 
-# Thanks to https://www.facebook.com/duong.than.net for translate to English!
+listen# إذا أردت الانتقال لسطر جديد استخدم \n. مثال: Priyanshu\nPriyansh.
+# بعد التغيير، أعد تشغيل البوت لاستخدام التغييرات.
+# ضع الرمز # في بداية كل سطر إذا لم أردت تنفيذ ذلك السطر.
+# شكرًا لـ https://www.facebook.com/duong.than.net على الترجمة إلى الإنجليزية!
 
 # Priyansh.js 
 
-priyansh.errorFormat=Malformed module!
-priyansh.nameExist=Module's name is similar to another module!
-priyansh.notFoundLanguage=Module %1 don't support your language
-priyansh.notFoundPackage=Can't find package %1 support for module %2, installing...
-priyansh.cantInstallPackage=Can't install package %1 for module %2, error: %3
-priyansh.loadedPackage=Installed whole package successfully for module %1
-priyansh.loadedConfig=Installed config successfully for module %1
-priyansh.cantLoadConfig=Can't install config of module %1, error: %2
-priyansh.cantOnload=Can't launch setup of module %1, error: %1
-priyansh.successLoadModule=Successfully installed module %1
-priyansh.failLoadModule=Can't install module %1, error: %2
-priyansh.finishLoadModule=Installed %1 module commands and %2 module events successfully 
-priyansh.foundPathAppstate=Found file appstate
-priyansh.notFoundPathAppstate=Can't find file appstate
-priyansh.checkListGban=Cheking global ban list...
-priyansh.banDevice=Your device have been banned from miraiproject, please contact to facebook https://fb.me/catalizcs to know more information or asking for unban key, if you already have unban key, please fill it below.
-priyansh.keyNotSameFormat=Wrong format, code must contain 6 number.
-priyansh.codeInputExpired=Your code is wrong or out of date.
-priyansh.unbanDeviceSuccess=Your device are unban now, please restart to use.
-priyansh.userBanned=You had been banned from miraiproject when %1 with reason: %2. Please contact to facebook https://fb.me/catalizCS to have more information!
-priyansh.finishCheckListGban=Checked global ban list
-priyansh.handleListenError=handleListene has occurred some unexpected errorr, error : %1
-priyansh.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED , STOP NOW!
-priyansh.refreshListen=Refreshed handleListener...
-priyansh.successConnectDatabase=Connected to database successfully!
-priyansh.failConnectDatabase=Failed to connect to database, error: %1
+priyansh.errorFormat=الوحدة تالفة!
+priyansh.nameExist=اسم الوحدة مشابه لاسم وحدة أخرى!
+priyansh.notFoundLanguage=الوحدة %1 لا تدعم لغتك
+priyansh.notFoundPackage=لا أجد الحزمة %1 لدعم الوحدة %2، جاري التثبيت...
+priyansh.cantInstallPackage=تعذر تثبيت الحزمة %1 للوحدة %2، الخطأ: %3
+priyansh.loadedPackage=تم تثبيت الحزمة بالكامل بنجاح للوحدة %1
+priyansh.loadedConfig=تم تثبيت الإعدادات بنجاح للوحدة %1
+priyansh.cantLoadConfig=تعذر تحميل إعدادات الوحدة %1، الخطأ: %2
+priyansh.cantOnload=لا يمكن تشغيل إعداد الوحدة %1، الخطأ: %1
+priyansh.successLoadModule=تم تثبيت الوحدة %1 بنجاح
+priyansh.failLoadModule=تعذر تثبيت الوحدة %1، الخطأ: %2
+priyansh.finishLoadModule=تم تثبيت %1 أوامر و %2 أحداث للوحدة بنجاح
+priyansh.foundPathAppstate=تم العثور على ملف appstate
+priyansh.notFoundPathAppstate=تعذر العثور على ملف appstate
+priyansh.checkListGban=جاري فحص قائمة الحظر العالمية...
+priyansh.banDevice=جهازك محظور من miraiproject، يرجى التواصل عبر: https://fb.me/catalizcs لمعرفة المزيد أو لطلب مفتاح إزالة الحظر. إذا كان لديك مفتاح الإلغاء، أدخله أدناه.
+priyansh.keyNotSameFormat=صيغة خاطئة، يجب أن يتكون الكود من 6 أرقام.
+priyansh.codeInputExpired=الكود خطأ أو منتهي الصلاحية.
+priyansh.unbanDeviceSuccess=تم رفع الحظر عن جهازك الآن، أعد تشغيل البوت للاستخدام.
+priyansh.userBanned=تم حظرك من miraiproject في %1، السبب: %2. يرجى التواصل عبر: https://fb.me/catalizCS لمزيد من المعلومات!
+priyansh.finishCheckListGban=تم فحص قائمة الحظر العالمية
+priyansh.handleListenError=حدث خطأ غير متوقع في handleListen، الخطأ: %1
+priyansh.warningSourceCode=تم اكتشاف تغيير في هيكل الكود المصدري، توقف الآن!
+priyansh.refreshListen=تم تحديث مستمع الأحداث...
+priyansh.successConnectDatabase=تم الاتصال بقاعدة البيانات بنجاح!
+priyansh.failConnectDatabase=فشل الاتصال بقاعدة البيانات، الخطأ: %1
 
 # includes/listen.js
 
-listen.startLoadEnvironment=Proceed to load the environment variable ...
+listen.startLoadEnvironment=جاري تحميل المتغيرات البيئية...
+listen.loadedEnvironmentThread=تم تحميل متغيرات بيئة المحادثة بنجاح
+listen.loadedEnvironmentUser=تم تحميل متغيرات بيئة المستخدم بنجاح 
+listen.successLoadEnvironment=تم تحميل المتغيرات البيئية بنجاح 
+listen.failLoadEnvironment=تعذر تحميل المتغيرات البيئية، الخطأ: %1
+
+# includes/controller/currencies.js
+
+currencies.needObjectOrArray=يجب أن تكون مصفوفة أو كائن أو كلاهما
+currencies.needObject=يجب أن يكون كائناً
+currencies.needNumber=يجب أن يكون رقماً
+
+# includes/controller/threads.js
+
+threads.needObjectOrArray=يجب أن تكون مصفوفة أو كائن أو كلاهما
+threads.needObject=يجب أن يكون كائناً 
+
+# includes/controller/users.js
+
+users.needObjectOrArray=يجب أن تكون مصفوفة أو كائن أو كلاهما
+users.needObject=يجب أن يكون كائناً
+
+# includes/handle/handleCommand.js
+
+handleCommand.userBanned=⛔️ لا يمكنك استخدام البوت!\n%1\n%2
+handleCommand.threadBanned=⛔️ هذه المحادثة/المجموعة لا يمكنها استخدام البوت!\n%1\n%2
+handleCommand.commandNotExist=لم أجد هذا الأمر، حاول مرة أخرى.
+handleCommand.commandThreadBanned=هذه المحادثة غير مسموح لها باستخدام الأمر "%1"
+handleCommand.commandUserBanned=أنت غير مسموح لك باستخدام الأمر "%1"
+handleCommand.threadNotAllowNSFW=هذه المحادثة غير مسموح لها باستخدام أوامر المحتوى +18
+handleCommand.cantGetInfoThread=لا أستطيع جلب معلومات المحادثة، الخطأ: %1
+handleCommand.permssionNotEnough=ليس لديك صلاحية استخدام الأمر "%1"
+handleCommand.cantSetMessageReaction=حدث خطأ غير متوقع عند تعيين تفاعل الرسالة، الخطأ: %1
+handleCommand.executeCommand=[ %1 ] تم استخدام الأمر: %2 بواسطة المستخدم: %3 في المحادثة: %4 | الوسائط: %5 | زمن التنفيذ: %6ms
+handleCommand.commandError=حدث خطأ غير متوقع عند استخدام الأمر %1، الخطأ: %2
+
+# includes/handle/handleCommandEvent.js
+
+handleCommandEvent.moduleError=حدث خطأ غير متوقع عند استخدام الأمر %1، الخطأ: %2
+
+# includes/handle/handleCreateDatabase.js
+
+handleCreateDatabase.newThread=محادثة جديدة: %1
+handleCreateDatabase.newUser=مستخدم جديد: %1
+
+# includes/handle/handleEvent.js
+
+handleEvent.executeEvent=[ %1 ] تم تنفيذ الحدث: %2 في المحادثة: %3 | زمن التنفيذ: %4ms
+handleEvent.eventError=حدث خطأ أثناء تنفيذ الحدث %1، الخطأ: %2
+
+# includes/handle/handleReaction.js
+
+handleReaction.missingValue=قيمة مفقودة للرد على مشكلتك
+handleReaction.executeError=حدث خطأ أثناء الرد على مشكلتك، الخطأ: %1
+
+# includes/handle/handleReply.js
+
+handleReply.missingValue=قيمة مفقودة للرد على مشكلتك
+handleReply.executeError=حدث خطأ أثناء الرد على مشكلتك، الخطأ: %1
+
+# includes/handle/handleSchedule.js
+
+handleSchedule.exectuteError=حدث خطأ عند تنفيذ الجدولة في الوحدة %1، الخطأ: %2
+
+# utils/index.js
+
+utils.throwError=[!] الأمر الذي تستخدمه غير صحيح من حيث الصياغة، يرجى استخدام %1help %2 لمعرفة تفاصيل الاستخدام..startLoadEnvironment=Proceed to load the environment variable ...
 listen.loadedEnvironmentThread=Loaded thread environment variable successfully 
 listen.loadedEnvironmentUser=Loaded user environment variable successfully 
 listen.successLoadEnvironment=Loaded environment variable successfully 
