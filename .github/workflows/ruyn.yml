@@ -1,4 +1,4 @@
-name: index.js CI 
+name: index.js CI
 
 on:
   push:
